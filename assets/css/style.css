@@ -1,0 +1,60 @@
+.flex-grid {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.col {
+  flex: 1;
+}
+
+#nav {
+    background-color: lightskyblue;
+    text-align: center;
+    text-decoration: none;
+        
+}
+
+#nav ul {
+    list-style-type: none;
+}
+
+#nav li {
+    display: inline;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+#image {
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+#one {
+    background-color: lightpink;
+}
+
+#two {
+    background-color: lightsalmon;
+}
+
+#three {
+    background-color: magenta;
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: lightgray;
+}
