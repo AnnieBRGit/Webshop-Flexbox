@@ -1,49 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap');
+
+
 .flex-grid {
   display: flex;
   justify-content: center;
   text-align: center;
+  padding: 10px;
 }
 
 .col {
   flex: 1;
 }
 
-#nav {
-    background-color: lightskyblue;
+header {
+    background-color: slategray;
     text-align: center;
-    text-decoration: none;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    letter-spacing: 2px;
+   
+}
+
+
+
+section {
+    padding: 10px;
+    background-color: slategrey;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav {
+    text-align: center;
+    background-color: turquoise;
+    justify-content: space-around;   
         
 }
 
 #nav ul {
-    list-style-type: none;
+    list-style: none;
 }
 
 #nav li {
-    display: inline;
-    justify-content: space-around;
+    display: inline-block;  
+    padding-right: 20px; 
+}
+
+#nav a {
     text-decoration: none;
+    color: slategrey;
+    width: 25%;
+}
+
+#nav li a:hover {
+  color: black;
+  font-weight: bold;
 }
 
 #image {
-    height: 150px;
-    width: 100%;
-    justify-content: center;
+    position: relative;
+    max-height: 150px;
+    max-width: 50%;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    padding-top: 10px;
     overflow: hidden;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 #one {
     background-color: lightpink;
 }
 
+#one a {
+    text-decoration: none;
+    color: black;
+}
+
+#one a:hover {
+  background-color: lightseagreen;
+  color: black;
+  font-weight: bold;
+}
+
 #two {
     background-color: lightsalmon;
 }
 
+#two a {
+    text-decoration: none;
+    color: black;
+}
+
+#two a:hover {
+  background-color: lightseagreen;
+  color: black;
+  font-weight: bold;
+}
+
+
 #three {
-    background-color: magenta;
+    background-color: beige;
+}
+
+#three a {
+    text-decoration: none;
+    color: black;
+}
+
+#three a:hover {
+  background-color: lightseagreen;
+  color: red;
+  font-weight: bold;
 }
 
 @media (max-width: 400px) {
@@ -52,9 +129,33 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  #nav a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+}
+
 .footer {
   display: flex;
-  justify-content: center;
   text-align: center;
   background-color: lightgray;
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-around;
+}
+
+.footer li {
+list-style: none;
+display: inline-block;
+justify-content: space-around;
+padding-right: 20px; 
+}
+
+.footer a {
+  text-decoration: none;
+  color: slategray;
+  text-transform: uppercase;
+  justify-content: space-around;
 }
