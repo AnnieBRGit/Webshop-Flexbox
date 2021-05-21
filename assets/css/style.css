@@ -6,6 +6,7 @@
   justify-content: center;
   text-align: center;
   padding: 10px;
+  
 }
 
 .col {
@@ -36,7 +37,8 @@ section {
 #nav {
     text-align: center;
     background-color: turquoise;
-    justify-content: space-around;   
+    justify-content: space-around;
+    padding-bottom: 10px;   
         
 }
 
@@ -62,12 +64,33 @@ section {
 
 #image {
     position: relative;
-    max-height: 150px;
-    max-width: 50%;
+    height: 90%;
+    width: 85%;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    padding-top: 10px;
     overflow: hidden;
+    border: 2px solid lightgray;
+    
+}
+
+.shoes {
+    overflow: hidden;
+    padding-right: 60px;
+    padding-left: 60px;
+
+}
+
+.bags {
+    overflow: hidden;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.sale {
+    overflow: hidden;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 15px;    
 }
 
 .center {
